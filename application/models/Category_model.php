@@ -6,7 +6,7 @@
  * Date: 27/11/2559
  * Time: 10:44
  */
-class Categories_model extends CI_Model
+class Category_model extends CI_Model
 {
     public function getCategory()
     {
@@ -18,5 +18,11 @@ class Categories_model extends CI_Model
             'name' => $name
         );
         $this->db->insert('categories', $data);
+    }
+
+    public function getCategoryByID($category_id)
+    {
+        $this->db->where('category_id', $category_id);
+        return $this->db->get('categories');
     }
 }

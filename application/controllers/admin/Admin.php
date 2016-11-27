@@ -10,7 +10,8 @@ class Admin extends CI_Controller
 {
     public function __construct()
     {
-        $this->load->model('category_model');
+        parent::__construct();
+        $this->load->model('Category_model');
     }
 
     public function index()
@@ -23,10 +24,14 @@ class Admin extends CI_Controller
 
     public function category()
     {
-        $categories = $this->category_model->getCategory();
+        $data = array(
+            'categories' => $this->Category_model->getCategory()
+        );
+
+
         $this->load->view('admin/layout/admin_header_view');
         $this->load->view('admin/layout/admin_sidebar_view');
-        $this->load->view('admin/category_view');
+        $this->load->view('admin/category_view', $data);
         $this->load->view('admin/layout/admin_footer_view');
     }
 
@@ -41,8 +46,25 @@ class Admin extends CI_Controller
     {
 
         $name = $this->input->post('name');
-        $this->category_model->insertCategory($name);
+        $this->Category_model->insertCategory($name);
         redirect(base_url('admin/category'));
+    }
+
+    public function edit_category($category_id)
+    {
+        $category =  $this->Category_model->getCategoryByID($category_id);
+        $data = array(
+            'category' => $category->row()
+        );
+        $this->load->view('admin/layout/admin_header_view');
+        $this->load->view('admin/layout/admin_sidebar_view');
+        $this->load->view('admin/edit_category_view', $data);
+        $this->load->view('admin/layout/admin_footer_view');
+    }
+
+    public function updateCategory($category_id)
+    {
+
     }
 
     public function news()
