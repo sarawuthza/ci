@@ -6,10 +6,15 @@
         </div>
         <!-- /.col-lg-12 -->
         <div class="col-lg-12">
-            <form action="<?php echo base_url('admin/update_category')?>" method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" value="<?php echo $category->name ?>" name="name" placeholder="โปรดกรอดชื่อหมวดหมู่" required>
-                </div>
+          <form action="<?php echo base_url('admin/update_category/' . $category->category_id) ?>" method="post">
+              <div class="form-group">
+                  <input class="form-control"
+                         value="<?php echo $category->name ?>"
+                         name="name"
+                         type="text"
+                         placeholder="โปรดกรอกชื่อหมวดหมู่"
+                         required>
+              </div>
                 <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> บันทึก</button>
             </form>
         </div>
