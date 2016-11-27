@@ -22,7 +22,7 @@
                     something more unique.</p>
 
                 <p><a href="#" class="btn btn-primary" role="button">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </a> <img class="animated infinite pulse" src="img/Zen-o.png" alt="" style="width: 200px; height: 250px;"></p>
+                    </a> <img class="animated infinite pulse" src="img/Zen-o.png" alt="" style="width: 80px;height: 80px;"></p>
             </div>
         </div>
     </div>
