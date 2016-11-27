@@ -9,17 +9,18 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-12 col-md-8">
+        <div class="col-xs-12 col-md-5">
             <div class="thumbnail">
-                <img src="http://placehold.it/800X300" alt="...">
+                <img src="http://placehold.it/700X400" alt="...">
             </div>
         </div>
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-7">
             <div class="caption">
                 <h2>Thumbnail label</h2>
                 <p class="hidden-xs">This is a template for a simple marketing or informational website. It includes a large callout
                     called a jumbotron and three supporting pieces of content. Use it as a starting point to create
                     something more unique.</p>
+
                 <p><a href="#" class="btn btn-primary" role="button">Read more <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </a></p>
             </div>
@@ -27,12 +28,12 @@
     </div>
     <hr class="divider">
     <div class="row">
-        <div class="col-sm-6 col-md-8">
+        <div class="col-xs-12 col-md-5">
             <div class="thumbnail">
-                <img src="http://placehold.it/800X300" alt="...">
+                <img src="http://placehold.it/700X400" alt="...">
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-xs-12 col-md-7">
             <div class="caption">
                 <h2>Thumbnail label</h2>
                 <p>This is a template for a simple marketing or informational website. It includes a large callout
@@ -44,12 +45,12 @@
     </div>
     <hr class="divider">
     <div class="row">
-        <div class="col-sm-6 col-md-8">
+        <div class="col-xs-12 col-md-5">
             <div class="thumbnail">
-                <img src="http://placehold.it/800X300" alt="...">
+                <img src="http://placehold.it/700X400" alt="...">
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-xs-12 col-md-7">
             <div class="caption">
                 <h2>Thumbnail label</h2>
                 <p>This is a template for a simple marketing or informational website. It includes a large callout
